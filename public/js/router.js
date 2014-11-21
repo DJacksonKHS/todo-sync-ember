@@ -12,8 +12,8 @@
 	Todos.TodosRoute = Ember.Route.extend({
 		model: function () {
 			return this.store.find('todo');
-		},
-
+		}
+/*
 		afterModel: function (recordArray) {
 			// This tells PouchDB to listen for live changes and
 			// notify Ember Data when a change comes in.
@@ -24,6 +24,7 @@
 				recordArray.update();
 			});
 		}
+*/
 	});
 
 	Todos.TodosIndexRoute = Todos.TodosRoute.extend({
